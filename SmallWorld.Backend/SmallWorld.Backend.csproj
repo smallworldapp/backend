@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputTypeEx>exe</OutputTypeEx>
+    <StartupObject>SmallWorld.Program</StartupObject>
+    <RootNamespace>SmallWorld</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Markdown" Version="2.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+    <PackageReference Include="SharpRaven" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmallWorld.Database\SmallWorld.Database.csproj" />
+  </ItemGroup>
+</Project>

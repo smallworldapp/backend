@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SmallWorld.Database": {
+      "commandName": "Project",
+      "commandLineArgs": "update"
+    }
+  }
+}
